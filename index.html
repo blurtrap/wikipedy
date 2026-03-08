@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Моя Википедия</title>
+    <link rel="stylesheet" href="style.css?v=oled1">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Хрюкальня</h1>
+            <p>СВОБОДНАЯ ЭНЦИКЛОПЕДИЯ УГАРНЫХ СЛОВ (БЕЗ РАЗНИЦЫ КАКИХ)</p>
+
+            <button id="loginBtn" onclick="adminLogin()">🔑 Войти как админ</button>
+
+            <button id="logoutBtn" onclick="logoutAdmin()" style="display:none;">
+                🚪 Выйти из админа
+            </button>
+        </header>
+
+        <div class="search-box">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Введите название поста..." required>
+                <button type="submit">🔍 Найти</button>
+            </form>
+            <a href="edit.html" class="btn-create">➕ Создать новую историю/смехуятинку</a>
+        </div>
+
+        <div class="content">
+            <div id="articlesList" class="page-list">
+                <!-- Статьи будут загружаться сюда через JS -->
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 СВОБОДНАЯ ЭНЦИКЛОПЕДИЯ. Все материалы доступны для редактирования.</p>
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <p>ТГ СОЗДАТЕЛЯ САЙТА</p>
+                    <a href="https://t.me/blurtrap" class="footer_img" target="_blank">
+                        <img src="icon_tg.svg" alt="Telegram">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script.js?v=oled1"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "my-wiki",
+  "version": "1.0.0",
+  "description": "Простая википедия с сохранением статей в файлы",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["wiki", "articles", "blog"],
+  "author": "",
+  "license": "MIT"
+}
